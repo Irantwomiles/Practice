@@ -1,0 +1,15 @@
+Arena:
+- Arena's should be separated into 2 different categories (Solo, Tournament)
+- Arenas should be separated via name since they will have different ID's
+Duel:
+- When players drop items on the ground it should be added to droppedItems list and removed at the end of the match
+- Check all of conditions for duel
+Party:
+- basic party system
+- split teams in 2
+- ffa
+Premium:
+- Give option for unlimited premium match
+Tournament:
+Staff mode:
+Profile:

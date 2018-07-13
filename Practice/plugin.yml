@@ -1,0 +1,43 @@
+name: Practice
+main: me.iran.practice.Practice
+author: Irantwomiles
+version: 1.0-BETA
+commands:
+  arena:
+    description: all commands for arena
+  gametype:
+    description: all commands for gametypes
+  duel:
+    description: duels
+  accept:
+    description: accept duels
+  deny:
+    description: deny duels
+  setspawn:
+    description: set practice spawn
+  seteditor:
+    description: set editor spawn
+  premium:
+    description: all commands related to premium tokens
+  token:
+    description: all commands related to tokens
+  party:
+    description: all party commands
+  spectate:
+    description: spectate players in a match
+    aliases: [spec]
+  lms:
+    description: lms
+  _:
+    description: view inv
+  elo:
+    description: all of the elo commands
+  host:
+    description: host events
+  tdm:
+    description: TDM commands
+  edit:
+    description: You can break and place blocks
+  tournament:
+    description: tournament
+    

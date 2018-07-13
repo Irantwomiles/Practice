@@ -1,0 +1,17 @@
+Permission nodes ending in a '.admin' inherit all of the permissions for that command/action
+
+Arena:
+- arena.create
+- arena.delete
+- arena.edit
+- arena.info
+- arena.admin
+GameType:
+- game.create
+- game.delete
+- game.edit
+- game.info
+- game.admin
+Lobby:
+- lobby.admin
+

@@ -1,0 +1,180 @@
+no-permission: '&4&lYou have no permission.'
+arena-create: '&aYou have created the arena %arena%'
+arena-exists: '&cA arena by the id of %id% already exists'
+gametype-exists: '&cGametype %gametype% already exists'
+gametype-created: '&aGametype %gametype% created'
+kit-exists: '&eYou already have a kit named &c%kit%&e for the game mode &c%gametype%'
+kit-loaded: '&7Loaded Kit &e%kit%'
+kit-created: '&7Created kit &e%kit%'
+kit-deleted: '&7Deleted kit &c%kit%'
+kit-updated: '&7Updated kit &b%kit%'
+join-unranked-queue: '&7You have joined unranked &6%gametype%&7 queue with &e%size%&7 others.'
+join-ranked-queue: '&7You have joined ranked &c%gametype%&7 queue with &e%size%&7 others.'
+join-premium-queue: '&7You have joined premium &6&l%gametype%&7 queue with &e%size%&7 others.'
+duel-send: '&7You have sent a duel request to &6%reciever%&7 for &c%gametype%&7'
+duel-recieve: '&e%sender%&7 has sent you a duel request for &6%gametype%&7 in arena &6%arena%'
+unranked-duel-start: '&7A fight started with %player% in arena %arena% in the game mode %gametype%'
+ranked-duel-start: '&7A ranked fight started with %player%(%elo%) in arena %arena% in the game mode %gametype%'
+no-premium-matches: '&cYou dont have any &6&lPremium&c matches left, please visit our website at &estore.iran.com'
+sent-premium-token: '&e%sender%&7 has just sent you &6&l%amount%&7 Premium tokens!'
+no-tokens: '&cYou dont have any &6&Tokens&c left, please visit our website at &estore.iran.com'
+sent-token: '&e%sender%&7 has just sent you &6&l%amount%&7 Tokens!'
+team-duel-start: '&eTeam duel started &c%gametype% &ein arena &c%arena%'
+scoreboard-title: '&e&lIran&7&lNetwork &f| &7Practice' 
+team-death-message: '&d%player%&c has been killed by &5%killer%'
+spectate-message-player: '&eYou are spectating &a%l%player%'
+spectate-message-target: '&a&l%player% &eis now spectating your match!'
+join-lms: '&6%player%&7 has joined the LMS event &e(%count%/100)'
+leave-lms: '&6%player%&7 has left &e(%count%)'
+death-lms: '&c&l%player%&7 has been eliminated (%count%)'
+win-lms: '&b&l%player%&3 has won the LMS event!'
+elo-reset-token: 10
+elo-reset-message: '&5&l[Pussy]&d Pussy ALERT &e%player%&d reset their Elo!'
+allow-elo-reset: true
+unranked-needed: 25
+unranked-needed-message: '&7You need to win &e%need%&7 more unranked matches to play ranked!'
+tdm-start-message: '&6&l[TDM]&7 A TDM event has been started! '
+tdm-team1-win: '&1&lBlue &7has won the TDM Event!'
+tdm-team2-win: '&4&lRed &7has won the TDM Event!'
+tdm-join-team1: '&7You have joined &1&lBlue &7team!'
+tdm-join-team2: '&7You have joined &4&lRed &7team!'
+tdm-team1-death: '&4%player% &7has been killed'
+tdm-team1-death: '&1%player% &7has been killed'
+random-token: '&eYou have just won &d&l1&e Event Token from this Match!'
+random-premium: '&6You have just wonn &5&l5&6 Premium Match Tokens from this Match!'
+party-enabled: false
+token-percent: 100
+premium-percent: 100
+unranked-duel-end:
+  - '&c%winner% &7vs &c%loser%'
+  - '&7&m----------------------'
+  - '&a&lWinner: &7%winner%'
+  - ''
+  - '&eDuration: &7%duration%'
+  - '&eArena: &7%arena%'
+  - '&eGameType: &7%gametype%'
+ranked-duel-end:
+  - '&b%winner% &a+%elo% &7(&a%winner-elo%&7) vs &c%loser% &7(&c%loser-elo&7) &c-%elo%'
+  - '&7&m----------------------'
+  - '&a&lWinner: &7%winner%'
+  - ''
+  - '&eDuration: &7%duration%'
+  - '&eArena: &7%arena%'
+  - '&eGameType: &7%gametype%'
+leave-queue:
+  unranked: '&7You have left the &c%gametype%&7 unranked queue'
+  ranked: '&7You have left the &c%gametype%&7 ranked queue'
+  premium: '&7You have left the &c%gametype%&7 premium queue'
+spawn:
+  x: 0.0
+  y: 4.0
+  z: 0.0
+  pitch: 0.0
+  yaw: 0.0
+  world: 'world'
+editor:
+  x: 0.0
+  y: 4.0
+  z: 0.0
+  pitch: 0.0
+  yaw: 0.0
+  world: 'world'
+duel:
+  unranked-start-message: '&eYou have been matched with &6%player%&e in the &c%gametype%&e game mode'
+inventory:
+  party:
+    duel: '&7Duel'
+    arena: '&8Arenas'
+    queue: '&dParty Queues'
+  ranked: '&cRanked Queue'
+  unranked: '&eUnranked Queue'
+  events: '&6Events'
+  host: '&dHost Menu'
+  options: '&7Options'
+  lms: '&3LMS'
+  list-lms: '&7Active LMS'
+  premium: '&6Premium Queue'
+  duel: '&7Duel'
+  queue: '&3Queue'
+  tdm: 'Select a Kit'
+  kit-editor:
+    editor: '&eKit Editor'
+    edit-kit: '&bClick to Edit'
+    delete-kit: '&cClick to Delete'
+    save-kit: '&aSave Kit'
+    kit-options: '&cOption Menu'
+items:
+  queue:
+    name: '&a&lGame Queues'
+    position: 0
+  events:
+    name: '&a&lEvents'
+    position: 1
+  kit-editor:
+    name: '&e&lEditor'  
+    position: 8
+  party:
+    name: '&d&lCreate Party'
+    position: 4
+  unranked-queue:
+    name: '&cLeave Unranked Queue'
+    position: 0
+  party-unranked-queue:
+    name: '&cLeave 2v2 Unranked Queue'
+    position: 0
+  ranked-queue:
+    name: '&cLeave Ranked Queue'
+    position: 0
+  premium-queue:
+    name: '&cLeave Premium Queue'
+    position: 0
+  spectator-leave:
+    name: '&c&lLeave Spectator Mode'
+    position: 0
+  options:
+    name: '&6Options'
+    position: 7
+party-items:
+  queue:
+    name: '&c&lParty Queue'
+    position: 0
+  party-events:
+    name: '&b&lParty Events'
+    position: 1
+  disband:
+    name: '&4&lDisband Party'
+    position: 4
+  info:
+    name: '&a&lParty Info'
+    position: 6
+  kit-editor:
+    position: 8
+  leave:
+    name: '&4&lLeave Party'
+    position: 4
+scoreboard:
+  team:
+    title: '&cTest Title'
+    line: '&7&m---------'
+    info: 'www.iranpvp.com'
+    team1: '&dTeam1: &f%alive%/%total%'
+    team2: '&bTeam2: &f%alive%/%total%'
+  lobby:
+    title: 'Testing title'
+    online: '&6&l%online%'
+    info: 'www.iranpvp.com'
+    line: '&7&m---------'
+  tdm:
+    title: 'Testing title'
+    blue: '&1&lBlue&7(%players%) &f%score%/100'
+    green: '&a&lGreen&7(%players%)&f %score%/100'
+    info: 'www.iranpvp.com'
+    line: '&7&m---------'
+    game-timer: '%timer%'
+    start-timer: '&7TDM starting in %timer%'
+  ffa:
+    title: 'Testing title'
+    line: '&7&m---------'
+    info: 'www.iranpvp.com'
+    alive: 'Left: %alive%'
+    time: 'Match will start in %time%'
