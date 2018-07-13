@@ -13,6 +13,7 @@ import me.iran.practice.tournament.TPlayer;
 import me.iran.practice.tournament.Tournament;
 import me.iran.practice.tournament.TournamentManager;
 import me.iran.practice.tournament.TournamentState;
+import net.md_5.bungee.api.ChatColor;
 
 public class TDuelEndEvent implements Listener {
 	
@@ -40,31 +41,7 @@ public class TDuelEndEvent implements Listener {
 		
 		tournament.getAdvancing().add(twinner);
 		
-		Bukkit.broadcastMessage(tloser.getPlayer().getName() + " has been eliminated");
-		
-		if(advance(tournament)) {
-			
-			if(tournament.getPlayers().size() == 1) {
-				Bukkit.broadcastMessage(twinner.getPlayer().getName() + " has won the tournament!");
-			}
-			
-			tournament.setState(TournamentState.TRANSITION);
-			
-			Bukkit.getScheduler().scheduleSyncDelayedTask(Practice.getInstance(), new Runnable() {
-				
-				public void run() { 
-					tournament.setState(TournamentState.ACTIVE);
-					tournament.setRound(tournament.getRound() + 1);
-					
-
-					tournament.createMatch();
-					
-					Bukkit.broadcastMessage("Tournament is now advancing to round " + tournament.getRound());
-				}
-				
-			}, 20 * 5);
-			
-		}
+		Bukkit.broadcastMessage(ChatColor.RED + tloser.getPlayer().getName() + ChatColor.GOLD + " has been eliminated");
 		
 	}
 	
@@ -78,7 +55,7 @@ public class TDuelEndEvent implements Listener {
 		if (advance(tournament)) {
 
 			if (tournament.getPlayers().size() == 1) {
-				Bukkit.broadcastMessage(twinner.getPlayer().getName() + " has won the tournament!");
+				Bukkit.broadcastMessage(ChatColor.AQUA + twinner.getPlayer().getName() + ChatColor.DARK_AQUA + " has won the tournament!");
 				tournament.getPlayers().clear();
 				TournamentManager.getManager().getTournaments().remove(tournament);
 			}
@@ -93,7 +70,7 @@ public class TDuelEndEvent implements Listener {
 
 					tournament.createMatch();
 
-					Bukkit.broadcastMessage("Tournament is now advancing to round " + tournament.getRound());
+					Bukkit.broadcastMessage(ChatColor.GREEN + "Tournament is now advancing to round " + ChatColor.BLUE + tournament.getRound());
 				}
 
 			}, 20 * 5);
