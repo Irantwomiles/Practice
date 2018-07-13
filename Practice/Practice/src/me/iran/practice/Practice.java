@@ -72,6 +72,7 @@ import me.iran.practice.scoreboard.ScoreboardEvents;
 import me.iran.practice.tournament.TournamentCommands;
 import me.iran.practice.tournament.TournamentRunnable;
 import me.iran.practice.tournament.listeners.TDuelEndEvent;
+import me.iran.practice.tournament.listeners.TournamentDisconnect;
 import me.iran.practice.utils.PlayerItems;
 
 public class Practice extends JavaPlugin {
@@ -195,6 +196,7 @@ public class Practice extends JavaPlugin {
     	Bukkit.getServer().getPluginManager().registerEvents(new TDMManager(), this);
     	Bukkit.getServer().getPluginManager().registerEvents(new ScoreboardEvents(), this);
     	Bukkit.getServer().getPluginManager().registerEvents(new TDuelEndEvent(), this);
+    	Bukkit.getServer().getPluginManager().registerEvents(new TournamentDisconnect(), this);
     }
     
     private void loadCommands() {

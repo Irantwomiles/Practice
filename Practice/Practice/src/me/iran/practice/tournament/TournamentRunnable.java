@@ -9,7 +9,7 @@ public class TournamentRunnable extends BukkitRunnable {
 		
 		for(Tournament t : TournamentManager.getManager().getTournaments()) {
 			
-			if(t.getState() == TournamentState.WAITING && t.getPlayers().size() == 2) {
+			if(t.getState() == TournamentState.WAITING && t.getPlayers().size() == 3) {
 				t.setState(TournamentState.ACTIVE);
 				
 				Bukkit.broadcastMessage("Tournament has started " + t.getID());

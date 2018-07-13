@@ -39,8 +39,6 @@ public class TDuelEndEvent implements Listener {
 		
 		tournament.getPlayers().remove(tloser);
 		
-		tournament.getAdvancing().add(twinner);
-		
 		Bukkit.broadcastMessage(ChatColor.RED + tloser.getPlayer().getName() + ChatColor.GOLD + " has been eliminated");
 		
 	}
@@ -58,6 +56,7 @@ public class TDuelEndEvent implements Listener {
 				Bukkit.broadcastMessage(ChatColor.AQUA + twinner.getPlayer().getName() + ChatColor.DARK_AQUA + " has won the tournament!");
 				tournament.getPlayers().clear();
 				TournamentManager.getManager().getTournaments().remove(tournament);
+				return;
 			}
 
 			tournament.setState(TournamentState.TRANSITION);

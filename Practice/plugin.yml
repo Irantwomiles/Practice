@@ -40,4 +40,5 @@ commands:
     description: You can break and place blocks
   tournament:
     description: tournament
+    aliases: [t]
     
